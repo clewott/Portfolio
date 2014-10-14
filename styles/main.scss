@@ -1,4 +1,11 @@
 body {
   font-family: 'Cabin', sans-serif;
   padding: 5px;
+  .eachProject {
+    text-align:center;
+    .projectImage {
+      width: 325px;
+      height: 325px;
+    }
+  }
 }
