@@ -2,26 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,  height=device-height, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="http://iconogen.com/images/computer.png">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
-  <title>Chris Otten's Portfolio</title>
+  <title>Portfolio | Chris Otten - Front End Developer</title>
 </head>
 <body>
   <header>
-    <nav>
-      <a href="resume.html">Resume</a>
-      <a href="#about">Bio</a>
-    </nav>
-    <h1 class="mainHeader">Chris Otten</h1>
-    <h4><span><i class="fa fa-envelope"></i> <a href="mailTo:ChrisTopher.R.Otten@gmail.com" target="_blank">Christopher.R.Otten@gmail.com</a></span> | <span><i class="fa fa-mobile"></i> <a href="tel:+8433776114">843-377-6114</a></span> | <span><a href="https://github.com/crotten" target="_blank"><i class="fa fa-github-square"></i></a></span> | <span><a href="https://www.linkedin.com/profile/view?id=128959084" target="_blank"><i class="fa fa-linkedin-square"></i></a></span></h4>
+    <div class="row group">
+      <a class="logo col-md-4 col-sm-5 col-xs-12" href="">
+        <div class="logoName">
+          <img src="http://iconogen.com/images/computer.png" alt="">
+          <h1>CHRIS OTTEN</h1>
+          <h2>Front End Developer</h2>
+        </div>
+      </a>
+      <nav role="navigation" class="navBar col-md-8 col-sm-7 col-xs-12">
+        <ul class="menuNav">
+          <li class="menuItem"><a href="mailTo:Christopher.R.Otten@gmail.com?subject=Getting+In+Touch&body=Hey+Chris,"><i class="fa fa-envelope"></i></a></li> |
+          <li class="menuItem"><a href="tel:+8433776114"><i class="fa fa-mobile"></i></a></li> |
+          <li class="menuItem"><span><a href="https://github.com/crotten" target="_blank"><i class="fa fa-github-square"></i></a></span></li> |
+          <li class="menuItem"><a href="https://www.linkedin.com/profile/view?id=128959084" target="_blank"><i class="fa fa-linkedin-square"></i></a></li> |
+          <li class="menuItem"><a href="https://twitter.com/ChristopheOtten" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <hr>
+  <div class="row intro">
+    <h1>Building creative &amp; effective websites</h1>
+    <h2>Specialising in JavaScript, SASS, AngularJS, responsive design, and animation.</h2>
+    <button>
+      <a href="">Get In Touch<span><i class="fa fa-arrow-right"></i></span></a>
+    </button>
+  </div>
 
   <div class="wrapper" id="work">
-    <h2>Projects:</h2>
+    <h2>Portfolio</h2>
     <div class="row">
       <div class="col-md-4 col-sm-4 col-xs-12 eachProject">
         <h3>TechConnect</h3>
@@ -59,30 +79,25 @@
   <hr>
 
   <div class="row" id="about">
-    <div class="col-md-7">
+    <div class="col-md-7 col-sm-7 col-xs-12 aboutMe">
       <h2>Bio:</h2>
       <img src="/images/otten_chris.jpg" alt="">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima sint ratione sit animi, aut eveniet molestias hic aliquid? Ullam, et perspiciatis. Voluptatum rem, tempore dolorem omnis beatae, quos laudantium quam.</p>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-5 col-sm-5 col-xs-12 resume">
       <h2>Resume:</h2>
       <a href="resume.html"><img src="/images/resume.png" alt=""></a>
     </div>
   </div>
 
+  <hr>
+
   <footer>
-    <ul class="row">
+    <div class="row">
       <h2>Connect With Me:</h2>
-      <li class="col-md-5"><h4><i class="fa fa-envelope"></i> <a href="mailTo:ChrisTopher.R.Otten@gmail.com" target="_blank">Christopher.R.Otten@gmail.com</a></h4></li>
-      <li class="col-md-3"><h4><i class="fa fa-mobile"></i> <a href="tel:+8433776114">843-377-6114</a></h4></li>
-      <li class="col-md-2"><h4><a href="https://github.com/crotten" target="_blank"><i class="fa fa-github-square"></i></a></h4></li>
-      <li class="col-md-2"><h4><a href="https://www.linkedin.com/profile/view?id=128959084" target="_blank"><i class="fa fa-linkedin-square"></i></a></h4></li>
-    </ul>
-    <nav>
-      <a href="">Projects</a>
-      <a href="">Resume</a>
-    </nav>
-    <p>© 2014 Site by Chris Otten. All rights reserved.</p>
+      <h4 class="mainContact"><span><i class="fa fa-envelope"></i> <a href="mailTo:Christopher.R.Otten@gmail.com?subject=Getting+In+Touch&body=Hey+Chris,">Christopher.R.Otten@gmail.com</a></span> | <span><i class="fa fa-mobile"></i> <a href="tel:+8433776114">843-377-6114</a></span> | <span><a href="https://github.com/crotten" target="_blank"><i class="fa fa-github-square"></i></a></span> | <span><a href="https://www.linkedin.com/profile/view?id=128959084" target="_blank"><i class="fa fa-linkedin-square"></i></a></span> | <span><a href="https://twitter.com/ChristopheOtten" target="_blank"><i class="fa fa-twitter-square"></i></a></span></h4>
+    </div>
+    <p>Unless otherwise stated, content is copyright © 2014 Chris Otten and code samples are licensed under MIT.</p>
   </footer>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

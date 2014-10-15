@@ -1,11 +1,137 @@
+.row {
+  margin: 0px;
+}
+
 body {
   font-family: 'Cabin', sans-serif;
-  padding: 5px;
-  .eachProject {
-    text-align:center;
-    .projectImage {
-      width: 325px;
-      height: 325px;
+  header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px;
+    .group {
+      .logo {
+        display: inline-block;
+        position: relative;
+        padding-left: 0px;
+        .logoName {
+          img {
+            float: left;
+            height: 100px;
+          }
+          h1 {
+            margin: 0px;
+            font-size: 1.5em;
+            color: #fff;
+            position: absolute;
+            top: 28%;
+            left: 100px;
+          }
+          h2 {
+            margin: 0px;
+            font-size: 1.5em;
+            font-weight: normal;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 100px;
+          }
+          @media (max-width:992px) {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+      .navBar {
+        text-align: right;
+        font-size: 1.3em;
+        position: relative;
+        .menuNav {
+          font-size: 2em;
+          list-style-type: none;
+          position: absolute;
+          top: 22px;
+          right: 10px;
+          padding-left: 0px;
+          @media (max-width: 767px) {
+            position: relative;
+            top: 0px;
+            text-align: center;
+          }
+          .menuItem {
+            display: inline-block;
+            text-align: center;
+            a {
+              color: #1E81B4;
+            }
+          }
+        }
+      }
+    }
+  }
+  .intro {
+    text-align: center;
+    background-color: #EEE;
+    padding: 10px;
+    h1 {
+      font-size: 3em;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+    h2 {
+      max-width: 630px;
+      margin: 0 auto;
+      font-size: 1.6em;
+      margin-bottom: 30px;
+    }
+    button {
+      transition: all 0.3s ease-in;
+      background-color: #1E81B4;
+      border: 1px solid #1E81B4;
+      margin-bottom: 30px;
+      padding: 15px;
+      a {
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: normal;
+        text-decoration: none;
+        span {
+          margin-left: 20px;
+        }
+      }
+    }
+    button:hover {
+      transition: all 0.3s ease-in;
+      background-color: #2c3e50;
+      border: 1px solid #2c3e50;
+    }
+  }
+  .wrapper {
+    h2 {
+      margin-left: 10px;
+    }
+    .eachProject {
+      text-align:center;
+      .projectImage {
+        width: 100%;
+      }
+    }
+  }
+  #about {
+    .aboutMe {
+      img {
+      }
+    }
+    .resume {
+      img {
+        border: 1px solid black;
+        width: 100%;
+      }
+    }
+  }
+  footer {
+    text-align: center;
+    .mainContact {
+      font-size: 1.5em;
     }
   }
 }
