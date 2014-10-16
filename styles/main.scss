@@ -126,8 +126,28 @@ body {
     }
     .eachProject {
       text-align:center;
-      .projectImage {
+      .image {
+        position: relative;
         width: 100%;
+        .projectImage {
+          width: 100%;
+          transition: all 0.5s ease-in;
+        }
+        .hiddenH3 {
+          display: none;
+          position: absolute;
+          border-radius: 5px;
+          top: 50%;
+          width: 80%;
+          font-size: 3em;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          margin-top: -24px;
+          background-color: #1E81B4;
+          border: 1px solid #1E81B4;
+          color: white;
+        }
       }
       nav {
         font-size: 2em;
@@ -213,4 +233,9 @@ body {
       font-size: 1.5em;
     }
   }
+}
+
+.coolEffect {
+  transition: all 0.5s ease-in;
+  opacity: 0.4;
 }

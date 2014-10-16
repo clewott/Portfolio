@@ -99,8 +99,26 @@ body {
     margin-left: 10px; }
   body .wrapper .eachProject {
     text-align: center; }
-    body .wrapper .eachProject .projectImage {
+    body .wrapper .eachProject .image {
+      position: relative;
       width: 100%; }
+      body .wrapper .eachProject .image .projectImage {
+        width: 100%;
+        transition: all 0.5s ease-in; }
+      body .wrapper .eachProject .image .hiddenH3 {
+        display: none;
+        position: absolute;
+        border-radius: 5px;
+        top: 50%;
+        width: 80%;
+        font-size: 3em;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: -24px;
+        background-color: #1E81B4;
+        border: 1px solid #1E81B4;
+        color: white; }
     body .wrapper .eachProject nav {
       font-size: 2em; }
   body #about .aboutMe {
@@ -161,3 +179,7 @@ body {
     text-align: center; }
     body footer .mainContact {
       font-size: 1.5em; }
+
+.coolEffect {
+  transition: all 0.5s ease-in;
+  opacity: 0.4; }
