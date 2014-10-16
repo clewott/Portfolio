@@ -34,6 +34,8 @@ body {
         body header .group .logo .logoName {
           width: 100%;
           text-align: center; } }
+      body header .group .logo .logoName:hover h1, body header .group .logo .logoName:hover h2 {
+        color: #1E81B4; }
     body header .group .navBar {
       text-align: right;
       font-size: 1.3em;
@@ -60,7 +62,7 @@ body {
   body .intro {
     text-align: center;
     background-color: #EEE;
-    padding: 10px; }
+    padding: 10px 10px 30px 10px; }
     body .intro h1 {
       font-size: 3em;
       font-weight: bold;
@@ -76,29 +78,31 @@ body {
       @media (max-width: 600px) {
         body .intro h2 {
           font-size: 1.2em; } }
-    body .intro button {
-      transition: all 0.3s ease-in;
-      background-color: #1E81B4;
-      border: 1px solid #1E81B4;
-      margin-bottom: 30px;
-      padding: 15px; }
-      body .intro button a {
-        color: #fff;
-        font-size: 1.5em;
-        font-weight: normal;
-        text-decoration: none; }
-        body .intro button a span {
+    body .intro a {
+      color: #fff;
+      font-size: 1.5em;
+      font-weight: normal;
+      text-decoration: none; }
+      body .intro a button {
+        transition: all 0.3s ease-in;
+        background-color: #1E81B4;
+        border: 1px solid #1E81B4;
+        margin-bottom: 10px;
+        padding: 15px; }
+        body .intro a button span {
           margin-left: 20px; }
-    body .intro button:hover {
-      transition: all 0.3s ease-in;
-      background-color: #2c3e50;
-      border: 1px solid #2c3e50; }
+      body .intro a button:hover {
+        transition: all 0.3s ease-in;
+        background-color: #2c3e50;
+        border: 1px solid #2c3e50; }
   body .wrapper h2 {
     margin-left: 10px; }
   body .wrapper .eachProject {
     text-align: center; }
     body .wrapper .eachProject .projectImage {
       width: 100%; }
+    body .wrapper .eachProject nav {
+      font-size: 2em; }
   body #about .aboutMe {
     text-align: center; }
     body #about .aboutMe h2 {
@@ -107,23 +111,52 @@ body {
       max-width: 700px;
       margin: 20px auto;
       font-size: 1.5em; }
-    body #about .aboutMe button {
-      transition: all 0.3s ease-in;
-      background-color: #1E81B4;
-      border: 1px solid #1E81B4;
-      margin-bottom: 30px;
-      padding: 15px; }
-      body #about .aboutMe button a {
-        color: #fff;
-        font-size: 1.5em;
-        font-weight: normal;
-        text-decoration: none; }
-        body #about .aboutMe button a span {
+      @media (max-width: 600px) {
+        body #about .aboutMe p {
+          font-size: 1em; } }
+    body #about .aboutMe a {
+      color: #fff;
+      font-size: 1.5em;
+      font-weight: normal;
+      text-decoration: none; }
+      body #about .aboutMe a button {
+        transition: all 0.3s ease-in;
+        background-color: #1E81B4;
+        border: 1px solid #1E81B4;
+        margin-bottom: 30px;
+        padding: 15px; }
+        body #about .aboutMe a button span {
           margin-left: 20px; }
     body #about .aboutMe button:hover {
       transition: all 0.3s ease-in;
       background-color: #2c3e50;
       border: 1px solid #2c3e50; }
+  body .print {
+    font-size: 3em;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 10px; }
+    body .print button {
+      padding: 10px;
+      background-color: #1E81B4;
+      border: 1px solid #1E81B4;
+      color: white;
+      transition: all 0.3s ease-in; }
+    body .print button:hover {
+      transition: all 0.3s ease-in;
+      background-color: #2c3e50;
+      border: 1px solid #2c3e50; }
+  body .WordSection1 {
+    max-width: 700px;
+    margin: 20px auto; }
+    body .WordSection1 h2 {
+      text-align: center;
+      font-size: 3em; }
+    body .WordSection1 h3 {
+      text-align: center;
+      margin-top: 0px;
+      color: black;
+      font-size: 1em; }
   body footer {
     text-align: center; }
     body footer .mainContact {

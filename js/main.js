@@ -1,1 +1,4 @@
 
+function printDiv() {
+     window.print();
+}

@@ -41,6 +41,11 @@ body {
             text-align: center;
           }
         }
+        .logoName:hover {
+          h1, h2 {
+            color: #1E81B4;
+          }
+        }
       }
       .navBar {
         text-align: right;
@@ -75,7 +80,7 @@ body {
   .intro {
     text-align: center;
     background-color: #EEE;
-    padding: 10px;
+    padding: 10px 10px 30px 10px;
     h1 {
       font-size: 3em;
       font-weight: bold;
@@ -93,26 +98,26 @@ body {
         font-size: 1.2em;
       }
     }
-    button {
-      transition: all 0.3s ease-in;
-      background-color: #1E81B4;
-      border: 1px solid #1E81B4;
-      margin-bottom: 30px;
-      padding: 15px;
-      a {
-        color: #fff;
-        font-size: 1.5em;
-        font-weight: normal;
-        text-decoration: none;
+    a {
+      color: #fff;
+      font-size: 1.5em;
+      font-weight: normal;
+      text-decoration: none;
+      button {
+        transition: all 0.3s ease-in;
+        background-color: #1E81B4;
+        border: 1px solid #1E81B4;
+        margin-bottom: 10px;
+        padding: 15px;
         span {
           margin-left: 20px;
         }
       }
-    }
-    button:hover {
-      transition: all 0.3s ease-in;
-      background-color: #2c3e50;
-      border: 1px solid #2c3e50;
+      button:hover {
+        transition: all 0.3s ease-in;
+        background-color: #2c3e50;
+        border: 1px solid #2c3e50;
+      }
     }
   }
   .wrapper {
@@ -123,6 +128,11 @@ body {
       text-align:center;
       .projectImage {
         width: 100%;
+      }
+      nav {
+        font-size: 2em;
+        a {
+        }
       }
     }
   }
@@ -138,20 +148,23 @@ body {
         max-width: 700px;
         margin: 20px auto;
         font-size: 1.5em;
+        @media (max-width: 600px) {
+          font-size: 1em;
+        }
       }
-      button {
-        transition: all 0.3s ease-in;
-        background-color: #1E81B4;
-        border: 1px solid #1E81B4;
-        margin-bottom: 30px;
-        padding: 15px;
-        a {
-          color: #fff;
-          font-size: 1.5em;
-          font-weight: normal;
-          text-decoration: none;
-          span {
-            margin-left: 20px;
+      a {
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: normal;
+        text-decoration: none;
+        button {
+            transition: all 0.3s ease-in;
+            background-color: #1E81B4;
+            border: 1px solid #1E81B4;
+            margin-bottom: 30px;
+            padding: 15px;
+            span {
+              margin-left: 20px;
           }
         }
       }
@@ -160,6 +173,38 @@ body {
         background-color: #2c3e50;
         border: 1px solid #2c3e50;
       }
+    }
+  }
+  .print {
+    font-size: 3em;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    button {
+      padding: 10px;
+      background-color: #1E81B4;
+      border: 1px solid #1E81B4;
+      color: white;
+      transition: all 0.3s ease-in;
+    }
+    button:hover {
+      transition: all 0.3s ease-in;
+      background-color: #2c3e50;
+      border: 1px solid #2c3e50;
+    }
+  }
+  .WordSection1 {
+    max-width: 700px;
+    margin: 20px auto;
+    h2 {
+      text-align: center;
+      font-size: 3em;
+    }
+    h3 {
+      text-align: center;
+      margin-top: 0px;
+      color: black;
+      font-size: 1em;
     }
   }
   footer {
