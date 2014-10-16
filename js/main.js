@@ -1,8 +1,8 @@
-$(document).ready( function() {
+function printDiv() {
+     window.print();
+}
 
-    function printDiv() {
-         window.print();
-    }
+$(document).ready( function() {
 
     $('.projectImage').on("mouseover", function() {
       $(this).addClass("coolEffect");
