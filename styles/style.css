@@ -106,7 +106,7 @@ body {
         width: 100%;
         transition: all 0.5s ease-in; }
       body .wrapper .eachProject .image .hiddenH3 {
-        display: none;
+        opacity: 0;
         position: absolute;
         border-radius: 5px;
         top: 50%;
@@ -118,7 +118,14 @@ body {
         margin-top: -24px;
         background-color: #1E81B4;
         border: 1px solid #1E81B4;
-        color: white; }
+        color: white;
+        transition: opacity 0.5s ease-in; }
+        body .wrapper .eachProject .image .hiddenH3 a {
+          color: white;
+          text-decoration: none; }
+      body .wrapper .eachProject .image .showBtn {
+        transition: opacity 0.5s ease-in;
+        opacity: 1; }
     body .wrapper .eachProject nav {
       font-size: 2em; }
   body #about .aboutMe {
