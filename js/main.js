@@ -4,13 +4,13 @@ function printDiv() {
 
 $(document).ready( function() {
 
-    $('.projectImage').on("mouseover", function() {
-      $(this).addClass("coolEffect");
-      $(this).next('.hiddenH3').fadeIn(500);
+    $('.image').on("mouseover", function() {
+      $(this).children('.projectImage').addClass("coolEffect");
+      $(this).children('.hiddenH3').addClass("showBtn");
       });
-    $('.projectImage').on("mouseout", function() {
-      $(this).removeClass("coolEffect");
-      $(this).next('.hiddenH3').fadeOut(500);
+    $('.image').on("mouseout", function() {
+      $(this).children('.projectImage').removeClass("coolEffect");
+      $(this).children('.hiddenH3').removeClass("showBtn");
       });
 
 });
