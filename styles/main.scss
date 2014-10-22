@@ -123,6 +123,8 @@ body {
   .wrapper {
     h2 {
       margin-left: 10px;
+      font-size: 2.5em;
+      text-decoration: underline;
     }
     .eachProject {
       text-align:center;
@@ -163,6 +165,9 @@ body {
           border: 1px solid #2c3e50;
         }
       }
+      li {
+        list-style-type: none;
+      }
       nav {
         font-size: 2em;
         a {
@@ -175,15 +180,26 @@ body {
       text-align: center;
       h2 {
         text-align: left;
-      }
-      img {
+        font-size: 2.5em;
+        text-decoration: underline;
       }
       p {
         max-width: 700px;
         margin: 20px auto;
-        font-size: 1.5em;
+        font-size: 20px;
+        text-align: left;
         @media (max-width: 600px) {
-          font-size: 1em;
+          font-size: 16px;
+        }
+        a {
+          color: #1E81B4;
+          font-size: 20px;
+          @media (max-width: 600px) {
+            font-size: 16px;
+          }
+        }
+        a:hover {
+          color: #2c3e50;
         }
       }
       a {
@@ -234,7 +250,7 @@ body {
       text-align: center;
       font-size: 3em;
     }
-    h3 {
+    h4 {
       text-align: center;
       margin-top: 0px;
       color: black;
