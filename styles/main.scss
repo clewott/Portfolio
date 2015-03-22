@@ -5,7 +5,18 @@
 body {
   font-family: 'Cabin', sans-serif;
   color: #2c3e50;
+  .drawer-default {
+    background-color: #EEE;
+    .drawer-menu-item a {
+      color: #333;
+    }
+    .drawer-menu-item a:hover {
+      color: #1E81B4;
+      text-decoration: none;
+    }
+  }
   header {
+    margin-top: -10px;
     background-color: #2c3e50;
     color: #fff;
     padding: 10px;

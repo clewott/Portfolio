@@ -11,6 +11,8 @@ function printDiv(chrisOttenResume) {
 
 $(document).ready( function() {
 
+    $(".drawer").drawer();
+
     $('.image').on("mouseover", function() {
       $(this).children('.projectImage').addClass("coolEffect");
       $(this).children('.hiddenH3').addClass("showBtn");
