@@ -8,11 +8,14 @@ body {
   .drawer-default {
     background-color: #EEE;
     .drawer-menu-item a {
-      color: #333;
+      color: #1E81B4;
     }
     .drawer-menu-item a:hover {
-      color: #1E81B4;
+      color: #333;
       text-decoration: none;
+    }
+    .largerFont {
+      font-size: 24px;
     }
   }
   header {
